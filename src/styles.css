@@ -6,16 +6,24 @@ html, body {
   margin: 0;
   border: 0;
   padding: 0;
-  background-color: #fff;
+  background-color: #051622;
 }
 
-main {
-  margin: auto;
-  width: 50%;
+.navbar {
+  overflow: hidden;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
   padding: 20px;
+  width: 100%;
 }
 
-main > h1 {
+.navbar a{
+  float: left;
+  display: block;
+  color: #1BA098;
   text-align: center;
-  font-size: 3.5em;
+  padding: 14px 16px;
+  text-decoration: none;
 }
+
