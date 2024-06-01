@@ -12,9 +12,15 @@
   <main>
     <h1>Hi, my name is Nick.</h1>
     <p>Hello world!</p>
-    <a href="/assets/nicholas_halterman_skillable_resume" download="resume">
-        <button type="button">Download</button>
-    </a>
+  <button id="button">Download</button>
+  <script src="html2pdf.bundle.min.js"></script>
+  <script>
+    const btn = document.getElementById("button");
+    btn.addEventListener("click", function() {
+      const element = document.getElementById("body");
+      html2pdf().from(element).save("/assets/nicholas_halterman_skillable_resume.pdf");
+    });
+  </script>
   </main>
 </body>
 
